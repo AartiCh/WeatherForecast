@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="#ffcccccc" />
+
+    <TextView
+        android:id="@+id/listDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listImage"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="Tue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listHighTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listDay"
+        android:layout_marginTop="5dp"
+        android:maxLines="4"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="27"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listLowTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listHighTemp"
+        android:layout_toEndOf="@+id/listImage"
+        android:maxLines="4"
+        android:text="49"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listLowTemp"
+        android:layout_toEndOf="@+id/listImage"
+        android:maxLines="4"
+        android:text="Condition"
+        android:textSize="14sp" />
+</RelativeLayout>
